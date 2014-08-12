@@ -1,1 +1,10 @@
-﻿开启AHCI模式也比较简单，主要是在注册表与BIOS中简单设置即可，下面小编教大家如何正确设置AHCI模式
+﻿1.
+Enter in to Win7，修改注册表
+进入“HKEY_LOCAL_MACHINE System CurrentControlSet Services Msahci”键值。
+在右边窗口中双击名称为“Start”的项目，会弹出一个对话框，将默认的参数由3更改为0。
+点击“确定”并且保存。
+
+2.
+重启电脑并且进入BIOS
+在Integrated Peripherals page下 将SATA RAID/AHCI Mode 改成 AHCI（不同BIOS 会有细微差别）
+保存之后自动重启电脑即可实现AHCI模式正常开启
